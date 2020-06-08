@@ -1,0 +1,188 @@
+html{
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+}
+
+.current{
+  background: #3c3c3c;
+}
+
+article{
+  margin: 20px;
+}
+
+header{
+  display: inline-block;
+  float: right;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 80px
+}
+
+p{
+  line-height: 1.2em;
+  font-size: 1.2em;
+  color: white;
+}
+
+h1, h2, h3, h4, h5{
+  color: white;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+
+h1{
+  font-size: 1.8em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2{
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+h3{
+  font-size: 1.6em;
+  margin-top: 10px;
+}
+
+h4{
+  font-size: 1.6em;
+  color: black;
+  font-weight: bold;
+  float:right;
+}
+
+h5{
+  font-size: 1.4em;
+  text-decoration: underline;
+}
+
+body{
+  font-family: arial;
+  line-height: 1.2em;
+  width: 100%; margin: 0;
+  }
+
+.center {
+  margin: 0 auto; width: 400px;
+}
+
+a{
+	color: white;
+  font-size: 1.2em;
+	text-decoration: none;
+}
+  a:hover,
+	a:active{
+    text-decoration: underline;
+  }
+
+nav{
+  margin-top: 5px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+  nav ul{
+  }
+    nav ul li{
+      display: inline-block;
+      height: 62px;
+    }
+      nav ul li a{
+        padding: 20px;
+        background: #0000ff;
+        color: white;
+    	}
+        nav ul li a:hover{
+          background-color: #787878;
+          box-shadow: 0px 1px 1px #666;
+    		}
+          nav ul li a:active{
+            background-color: #3c3c3c;
+          }
+            nav{
+              display: flex;
+              justify-content: space-between;
+            }
+
+footer{
+  border-bottom: 5px #0000ff solid;
+  margin-bottom: 10px;
+}
+  footer p{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 80%;
+    color: #0000ff;
+    }
+      footer a{
+        color: #ff0000;
+        font-weight: bold;
+      }
+
+section{
+  box-shadow: 0px 2px 2px #999;
+  color: white;
+  }
+section{
+  margin: 30px auto;
+  width: 1000px
+  height:auto;
+  background: #0000ff;
+  padding: 40px;
+  clear: both;
+  }
+
+.accordion {
+        background-color: #3cb371;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+  }
+
+.active, .accordion:hover {
+        background-color: darkblue;
+  }
+
+.accordion:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+  }
+
+.active:after {
+        content: "\2212";
+  }
+
+.panel {
+        padding: 0 18px;
+        background-color: darkgreen;
+        color: black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta name = "Author" content = "UP818044">
+  <meta name = "Description" content =  "WebF1 Website Design">
+  <title>UP818044 | DISCOVERY LOG</title>
+</head>
+
+<body>
+<article>
+    <header>
+      <h4>UP818044</h4>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="DiscoveryLog.html" class="current">Discovery Log</a></li>
+        <li><a href="Video.html">Video</a></li>
+        <li><a href="LitReview.html">Literature Review</a></li>
+        <li><a href="Image.html">Images</a></li>
+      </ul>
+    </nav>
+    <img src="stormtrooper.jpg" alt="Website Logo">
+
+    <section>
+      <h2>Discovery Log</h2>
+      <p>This is the Discovery Log I have been working on. I have separated the sections by month so that it is easy to follow.</p>
+
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>On the first week the lecturer explained the overview of topics that are in Web Foundation. I was taught how to manage my time and how to use VM machine. </p>
+      </div>
+
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>On the second week i was told to start a discovery log to keep track of everything i learnt new in web foundation. Therefore, i made a discovery log in my google drive. I completed a form called website award and i had a choice to pick an editor between atom, brackets, notepad++.etc. I researched all of those editors and i decided to go with atom. </p>
+      </div>
+
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>On week 3 i learned about web secuirty. I was taught how to figure out an whether an information is secret, sensitive or public</p>
+      </div>
+
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>On week 4 a coursework was given, it was a literature review. I discovered that i need to start my literature review as soon as possible and start using the uni library website to find books that are related to mitigating information. So i learned how to search for the correct resources by using the right keywords</p>
+      </div>
+
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>Now that i gathered informations about my given topic, it was time to learn how to write it down. I discovered that i have to be objective and formal when i write. I must also give references.</p>
+      </div>
+
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>I learnt how to use WinSCP and connect VM to it. I also learnt how to make a basic HTML page.</p>
+      </div>
+
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>I learnt how to style my html page so that it looks above basic. I discovered what and how to use stylesheet/CSS.</p>
+      </div>
+
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>I was absent.</p>
+      </div>
+
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>I learnt how to add images onto my website</p>
+      </div>
+
+      <button class="accordion">Week 10</button>
+      <div class="panel">
+        <p>I learnt how to address my website and how to upload my coursework.</p>
+      </div>
+
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
+
+    </section>
+
+    <footer>
+      <p>To check validation for this page <a href="http://validator.w3.org/check?uri=referer">HTML</a> and to check the validation of css for this page <a href="http://jigsaw.w3.org/css-validator/check/referer/">CSS</a></p>
+    </footer>
+  </article>
+
+</body>
+</html>
